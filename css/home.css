@@ -1,0 +1,119 @@
+.header{
+    margin-bottom: 30px;
+}
+
+.about-left, .about-item{
+    width: calc(100%/ 2 - 30px);
+}
+
+.about-item-dscr, .why-item-h2, .work-mark, .teamItem .h3, .ti-facebook{
+	color: #1D9D73;
+}
+
+.why-item, .why-img, .work-left, .work-right{
+    width: calc(100%/ 2 - 30px);
+}
+
+.articles-lorem, .articles-conse, .articles-sed, .teamItem{
+    width: calc(100%/3 - 30px);
+}
+
+.ti-book, .ti-headphone-alt, .ti-world{
+    font-size: 90px;
+    color: #4DB677;
+}
+
+.articles-link{
+    margin-top: 40px;
+    padding: 17px 56px;
+    border-radius: 40px;
+}
+
+.advRange, .articles-link{
+    background-color: #1D9D73;
+}
+
+.ti-apple, .articles-link{
+    color: #FFFFFF;
+}
+
+.articles-hr{
+    margin: 120px 0 100px 0;
+
+}
+
+.ti-check{
+    font-size: 56px;
+    color: #4DB677;
+    margin-right: 23px;
+}
+
+.ti-check, .work-mark, .articles-link{
+    display: inline-block;
+}
+
+.advItem{
+	width: calc(100% / 2 - 30px);
+	display: flex;
+	margin-top: 35px;
+}
+
+.advItem .title{
+	color: #1D9D73;
+	margin-top: 0;
+}
+
+.advRange{
+	width: 131px;
+	height: 131px;
+	background-color: #1D9D73;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 131px;
+	margin-right: 20px;
+}
+
+.advTexts{
+	width: calc(100% - 151px);
+}
+
+.advRange img{
+	vertical-align: middle;
+}
+
+.adv-hr{
+    margin: 107px 0 90px 0;
+}
+
+.sectionTeam{
+	text-align: center;
+}
+
+.ti-instagram, .ti-twitter-alt{
+    color: #888;
+}
+
+.ti-instagram, .ti-twitter-alt, .ti-facebook{
+    font-size: 30px;
+    margin: 0 10px;
+}
+.team-soc{
+    margin-top: 30px;
+}
+
+.team-hr{
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 1000px){
+	.advItem{
+		width: calc(100% / 1 - 30px);
+	}
+    .team-img{
+        max-width: 370px;
+    }
+    .teamItem{
+        width: 100%;
+        display: inline-block;
+    }
+}
