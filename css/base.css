@@ -144,7 +144,7 @@ hr{
 }
 
 @media screen and (max-width: 700px) {
-	.header, .nav-menu{
+	.header,{
 		justify-content: center;
 		text-align: center;
 	}
@@ -153,6 +153,8 @@ hr{
 	}
 	.nav-menu-li{
 		margin-bottom: 20px;
+		justify-content: left;
+		text-align: left;
 	}
 }
 
