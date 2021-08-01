@@ -1,19 +1,30 @@
 /* css var - #1D9D73 */
+:root{
+	--offset: 15px;
+	--grey:#888;
+	--black: #333;
+	--green: #1D9D73;
+	--mar-1: 50px;
+}
+html{
+	font-size: 10px;
+}
 
 body{
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 300;
-	color: #888;
+	color: var(--grey);
+	font-size: 16px;
 }
 
 h1,h2,h3,.h1,.h2,.h3{
 	font-weight: 300;
-	color: #333;
+	color: var(--black);
 }
 
 h1, .h1{
-	font-size: 55px;
-	margin: 30px 0;
+	font-size: 5.5rem;
+	margin: 3rem 0;
 }
 
 h2, .h2{
@@ -39,6 +50,12 @@ p{
 	font-weight: 300;
 }
 
+.btn {
+	background-color: var(--green);
+	padding: 17px 56px;
+	border-radius: 40px;
+}
+
 /* etc */
 .content-text ul{
 	list-style-type: disc;
@@ -47,32 +64,34 @@ p{
 
 .container{
 	max-width: 1170px;
-	padding: 30px 30px 0 30px;
+	padding: 10px 30px;
 	margin: 0 auto;
 }
+
 
 .row{
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -15px;
+	margin: 0 calc(var(--offset)*-1);
 }
 
 .col{
-	margin: 15px;
+	margin: var(--offset);
 	box-sizing: border-box;
 }
 
 .header{
     justify-content: space-between;
+	margin-bottom: var(--mar-1);
 }
 
 .ti-github{
-	color: #1D9D73;
+	color: var(--green);
 	margin-right: 5px;
 }
 
 .header-link, .header-logo{
-	color: #333;
+	color: var(--black);
 	font-weight: 400;
 }
 
@@ -80,9 +99,6 @@ p{
     font-size: 27px;
 }
 
-.header{
-    justify-content: space-between;
-}
 .ti-github, .header-logo, .header-text, .footer-text{
     display: inline-block;
 }
@@ -96,7 +112,9 @@ hr{
 }
 
 .ti-search{
-    font-size: 28px;
+    font-size: 20px;
+	color: black;
+	font-weight: 400;
 }
 
 .footer{
@@ -106,4 +124,40 @@ hr{
 
 .footer-text{
 	font-size: 14px;
+}
+
+@media screen and (max-width: 1130px) {
+	.container{
+		max-width: 1170px;
+		padding: 10px 15px;
+		margin: 0 auto;
+	}	
+}
+
+@media screen and (max-width: 768px) {
+	html{
+		font-size: 6px;
+	}
+	:root{
+		--mar-1: 25px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.header, .nav-menu{
+		justify-content: center;
+		text-align: center;
+	}
+	.nav-menu-li, .headerik, .menu{
+		width: calc(100%/1 - var(--offset) * 2);
+	}
+	.nav-menu-li{
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	:root{
+		--offset: 8px;
+	}
 }
